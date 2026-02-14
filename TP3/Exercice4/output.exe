@@ -1,0 +1,297 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=1 ./matmul_omp.exe
+Time taken: 7.362205 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=2 ./matmul_omp.exe
+Time taken: 3.420950 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=4 ./matmul_omp.exe
+Time taken: 1.881119 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=8 ./matmul_omp.exe
+Time taken: 2.107120 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=12 ./matmul_omp.exe
+Time taken: 2.282970 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+
+
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=4 ./matmul_omp.exe static 8
+Schedule: static, Chunk: 8, Threads: 4, Time taken: 1.858119 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=4 ./matmul_omp.exe dynamic 4
+Schedule: dynamic, Chunk: 4, Threads: 4, Time taken: 2.745433 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=4 ./matmul_omp.exe guided 2
+Schedule: guided, Chunk: 2, Threads: 4, Time taken: 1.650608 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+
+
+
+
+-----------------------------------
+Schedule: static, Chunk: 1, Threads: 2, Time taken: 3.647760 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 1, Threads: 4
+Schedule: static, Chunk: 1, Threads: 4, Time taken: 2.125941 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 1, Threads: 8
+Schedule: static, Chunk: 1, Threads: 8, Time taken: 3.297927 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 1, Threads: 16
+Schedule: static, Chunk: 1, Threads: 16, Time taken: 3.969123 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 2, Threads: 1
+Schedule: static, Chunk: 2, Threads: 1, Time taken: 8.216803 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 2, Threads: 2
+Schedule: static, Chunk: 2, Threads: 2, Time taken: 4.030671 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 2, Threads: 4
+Schedule: static, Chunk: 2, Threads: 4, Time taken: 2.351916 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 2, Threads: 8
+Schedule: static, Chunk: 2, Threads: 8, Time taken: 3.154598 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 2, Threads: 16
+Schedule: static, Chunk: 2, Threads: 16, Time taken: 3.292486 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 4, Threads: 1
+Schedule: static, Chunk: 4, Threads: 1, Time taken: 7.091565 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 4, Threads: 2
+Schedule: static, Chunk: 4, Threads: 2, Time taken: 5.410691 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 4, Threads: 4
+Schedule: static, Chunk: 4, Threads: 4, Time taken: 3.032138 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 4, Threads: 8
+Schedule: static, Chunk: 4, Threads: 8, Time taken: 2.425214 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 4, Threads: 16
+Schedule: static, Chunk: 4, Threads: 16, Time taken: 3.151749 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 8, Threads: 1
+Schedule: static, Chunk: 8, Threads: 1, Time taken: 7.645529 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 8, Threads: 2
+Schedule: static, Chunk: 8, Threads: 2, Time taken: 3.609588 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 8, Threads: 4
+Schedule: static, Chunk: 8, Threads: 4, Time taken: 2.856573 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 8, Threads: 8
+Schedule: static, Chunk: 8, Threads: 8, Time taken: 2.454217 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 8, Threads: 16
+Schedule: static, Chunk: 8, Threads: 16, Time taken: 3.079082 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 16, Threads: 1
+Schedule: static, Chunk: 16, Threads: 1, Time taken: 7.015301 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 16, Threads: 2
+Schedule: static, Chunk: 16, Threads: 2, Time taken: 4.965063 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 16, Threads: 4
+Schedule: static, Chunk: 16, Threads: 4, Time taken: 2.712839 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 16, Threads: 8
+Schedule: static, Chunk: 16, Threads: 8, Time taken: 2.370936 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 16, Threads: 16
+Schedule: static, Chunk: 16, Threads: 16, Time taken: 2.953062 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 32, Threads: 1
+Schedule: static, Chunk: 32, Threads: 1, Time taken: 7.127404 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 32, Threads: 2
+Schedule: static, Chunk: 32, Threads: 2, Time taken: 4.562982 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 32, Threads: 4
+Schedule: static, Chunk: 32, Threads: 4, Time taken: 1.959862 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 32, Threads: 8
+Schedule: static, Chunk: 32, Threads: 8, Time taken: 2.099390 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: static, Chunk: 32, Threads: 16
+Schedule: static, Chunk: 32, Threads: 16, Time taken: 2.867558 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 1, Threads: 1
+Schedule: dynamic, Chunk: 1, Threads: 1, Time taken: 7.816997 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 1, Threads: 2
+Schedule: dynamic, Chunk: 1, Threads: 2, Time taken: 4.475629 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 1, Threads: 4
+Schedule: dynamic, Chunk: 1, Threads: 4, Time taken: 4.399427 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 1, Threads: 8
+Schedule: dynamic, Chunk: 1, Threads: 8, Time taken: 6.646100 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 1, Threads: 16
+Schedule: dynamic, Chunk: 1, Threads: 16, Time taken: 11.558590 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 2, Threads: 1
+Schedule: dynamic, Chunk: 2, Threads: 1, Time taken: 7.055255 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 2, Threads: 2
+Schedule: dynamic, Chunk: 2, Threads: 2, Time taken: 4.426335 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 2, Threads: 4
+Schedule: dynamic, Chunk: 2, Threads: 4, Time taken: 4.018875 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 2, Threads: 8
+Schedule: dynamic, Chunk: 2, Threads: 8, Time taken: 4.889540 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 2, Threads: 16
+Schedule: dynamic, Chunk: 2, Threads: 16, Time taken: 7.973912 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 4, Threads: 1
+Schedule: dynamic, Chunk: 4, Threads: 1, Time taken: 8.578521 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 4, Threads: 2
+Schedule: dynamic, Chunk: 4, Threads: 2, Time taken: 6.539625 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 4, Threads: 4
+Schedule: dynamic, Chunk: 4, Threads: 4, Time taken: 3.289740 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 4, Threads: 8
+Schedule: dynamic, Chunk: 4, Threads: 8, Time taken: 3.590795 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 4, Threads: 16
+Schedule: dynamic, Chunk: 4, Threads: 16, Time taken: 5.057089 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 8, Threads: 1
+Schedule: dynamic, Chunk: 8, Threads: 1, Time taken: 7.320079 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 8, Threads: 2
+Schedule: dynamic, Chunk: 8, Threads: 2, Time taken: 6.182075 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 8, Threads: 4
+Schedule: dynamic, Chunk: 8, Threads: 4, Time taken: 2.321152 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 8, Threads: 8
+Schedule: dynamic, Chunk: 8, Threads: 8, Time taken: 2.400478 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 8, Threads: 16
+Schedule: dynamic, Chunk: 8, Threads: 16, Time taken: 3.280086 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 16, Threads: 1
+Schedule: dynamic, Chunk: 16, Threads: 1, Time taken: 7.910848 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 16, Threads: 2
+Schedule: dynamic, Chunk: 16, Threads: 2, Time taken: 3.426435 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 16, Threads: 4
+Schedule: dynamic, Chunk: 16, Threads: 4, Time taken: 1.719081 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 16, Threads: 8
+Schedule: dynamic, Chunk: 16, Threads: 8, Time taken: 2.211657 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 16, Threads: 16
+Schedule: dynamic, Chunk: 16, Threads: 16, Time taken: 2.951119 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 32, Threads: 1
+Schedule: dynamic, Chunk: 32, Threads: 1, Time taken: 7.774563 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 32, Threads: 2
+Schedule: dynamic, Chunk: 32, Threads: 2, Time taken: 3.823156 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 32, Threads: 4
+Schedule: dynamic, Chunk: 32, Threads: 4, Time taken: 1.855879 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 32, Threads: 8
+Schedule: dynamic, Chunk: 32, Threads: 8, Time taken: 2.129788 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: dynamic, Chunk: 32, Threads: 16
+^[[BSchedule: dynamic, Chunk: 32, Threads: 16, Time taken: 2.938246 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 1, Threads: 1
+Schedule: guided, Chunk: 1, Threads: 1, Time taken: 7.027319 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 1, Threads: 2
+Schedule: guided, Chunk: 1, Threads: 2, Time taken: 4.765571 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 1, Threads: 4
+Schedule: guided, Chunk: 1, Threads: 4, Time taken: 1.636757 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 1, Threads: 8
+Schedule: guided, Chunk: 1, Threads: 8, Time taken: 2.063236 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 1, Threads: 16
+Schedule: guided, Chunk: 1, Threads: 16, Time taken: 2.977962 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 2, Threads: 1
+Schedule: guided, Chunk: 2, Threads: 1, Time taken: 7.031525 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 2, Threads: 2
+Schedule: guided, Chunk: 2, Threads: 2, Time taken: 4.843729 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 2, Threads: 4
+Schedule: guided, Chunk: 2, Threads: 4, Time taken: 2.173876 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 2, Threads: 8
+Schedule: guided, Chunk: 2, Threads: 8, Time taken: 2.308159 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 2, Threads: 16
+Schedule: guided, Chunk: 2, Threads: 16, Time taken: 2.945931 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 4, Threads: 1
+Schedule: guided, Chunk: 4, Threads: 1, Time taken: 7.253440 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 4, Threads: 2
+Schedule: guided, Chunk: 4, Threads: 2, Time taken: 3.725553 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 4, Threads: 4
+Schedule: guided, Chunk: 4, Threads: 4, Time taken: 1.770670 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 4, Threads: 8
+Schedule: guided, Chunk: 4, Threads: 8, Time taken: 2.221776 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 4, Threads: 16
+Schedule: guided, Chunk: 4, Threads: 16, Time taken: 2.876365 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 8, Threads: 1
+Schedule: guided, Chunk: 8, Threads: 1, Time taken: 7.983819 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 8, Threads: 2
+Schedule: guided, Chunk: 8, Threads: 2, Time taken: 4.781053 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 8, Threads: 4
+Schedule: guided, Chunk: 8, Threads: 4, Time taken: 2.102053 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 8, Threads: 8
+Schedule: guided, Chunk: 8, Threads: 8, Time taken: 2.348531 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 8, Threads: 16
+Schedule: guided, Chunk: 8, Threads: 16, Time taken: 2.950828 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 16, Threads: 1
+Schedule: guided, Chunk: 16, Threads: 1, Time taken: 7.448071 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 16, Threads: 2
+Schedule: guided, Chunk: 16, Threads: 2, Time taken: 3.672123 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 16, Threads: 4
+Schedule: guided, Chunk: 16, Threads: 4, Time taken: 2.111818 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 16, Threads: 8
+Schedule: guided, Chunk: 16, Threads: 8, Time taken: 2.288381 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 16, Threads: 16
+Schedule: guided, Chunk: 16, Threads: 16, Time taken: 2.988101 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 32, Threads: 1
+Schedule: guided, Chunk: 32, Threads: 1, Time taken: 8.417866 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 32, Threads: 2
+Schedule: guided, Chunk: 32, Threads: 2, Time taken: 4.000450 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 32, Threads: 4
+Schedule: guided, Chunk: 32, Threads: 4, Time taken: 2.116039 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 32, Threads: 8
+Schedule: guided, Chunk: 32, Threads: 8, Time taken: 2.371362 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000
+Schedule: guided, Chunk: 32, Threads: 16
+Schedule: guided, Chunk: 32, Threads: 16, Time taken: 3.004763 seconds
+c[0]=333832500.000000, c[m*m-1]=-666166500.000000

@@ -1,0 +1,10 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=4 ./num_threads.exe
+Hello from the rank 0 thread
+Hello from the rank 2 thread
+Hello from the rank 1 thread
+Hello from the rank 3 thread
+Parallel execution of hello_world with 4 threads
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=2 ./num_threads.exe
+Hello from the rank 0 thread
+Hello from the rank 1 thread
+Parallel execution of hello_world with 2 threads

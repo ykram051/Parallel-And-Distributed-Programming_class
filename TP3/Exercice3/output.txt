@@ -1,0 +1,3 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ ./exo3.exe 
+Calculated PI = 3.141592653598162
+Time taken: 0.002524 seconds

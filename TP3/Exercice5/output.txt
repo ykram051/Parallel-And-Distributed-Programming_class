@@ -1,0 +1,46 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=1 ./jacobi.exe
+
+
+System size        :   120
+Iterations         :  108
+Norme             :  2.194E-16
+Elapsed time      :  1.331E-02 sec.
+CPU time          :  1.332E-02 sec.
+
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=2 ./jacobi.exe
+
+
+System size        :   120
+Iterations         :  108
+Norme             :  2.194E-16
+Elapsed time      :  8.746E-03 sec.
+CPU time          :  8.748E-03 sec.
+
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=4 ./jacobi.exe
+
+
+System size        :   120
+Iterations         :  108
+Norme             :  2.194E-16
+Elapsed time      :  6.560E-03 sec.
+CPU time          :  6.562E-03 sec.
+
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=8 ./jacobi.exe
+
+
+System size        :   120
+Iterations         :  108
+Norme             :  2.194E-16
+Elapsed time      :  6.903E-03 sec.
+CPU time          :  6.905E-03 sec.
+
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab3]$ OMP_NUM_THREADS=16 ./jacobi.exe
+
+
+System size        :   120
+Iterations         :  108
+Norme             :  2.194E-16
+Elapsed time      :  9.027E-03 sec.
+CPU time          :  9.029E-03 sec.
+
+

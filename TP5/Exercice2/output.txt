@@ -1,0 +1,13 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 4 exo2
+10
+Enter an integer (negative to quit): Process 0 got 10
+Process 2 got 10
+Process 1 got 10
+Process 3 got 10
+6
+Enter an integer (negative to quit): Process 0 got 6
+Process 2 got 6
+Process 1 got 6
+Process 3 got 6
+-1
+Enter an integer (negative to quit): Negative value entered. Exiting...

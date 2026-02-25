@@ -1,0 +1,39 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 1 exo4 1000
+Matrix size: 1000 x 1000
+Number of processes: 1
+Serial time: 0.000662 seconds
+Parallel time: 0.005208 seconds
+Speedup: 0.127133
+Efficiency: 12.713349%
+Maximum difference between parallel and serial result: 0.000000e+00
+VERIFICATION: PASSED
+
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 2 exo4 1000
+Matrix size: 1000 x 1000
+Number of processes: 2
+Serial time: 0.000514 seconds
+Parallel time: 0.004760 seconds
+Speedup: 0.107963
+Efficiency: 5.398137%
+Maximum difference between parallel and serial result: 0.000000e+00
+VERIFICATION: PASSED
+
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 4 exo4 1000
+Matrix size: 1000 x 1000
+Number of processes: 4
+Serial time: 0.000586 seconds
+Parallel time: 0.004928 seconds
+Speedup: 0.118850
+Efficiency: 2.971262%
+Maximum difference between parallel and serial result: 0.000000e+00
+VERIFICATION: PASSED
+
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 8 exo4 1000
+Matrix size: 1000 x 1000
+Number of processes: 8
+Serial time: 0.000555 seconds
+Parallel time: 0.009738 seconds
+Speedup: 0.056984
+Efficiency: 0.712306%
+Maximum difference between parallel and serial result: 0.000000e+00
+VERIFICATION: PASSED

@@ -1,0 +1,7 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 4 exo3
+10
+Enter a value: Process 0: value after adding rank = 10
+Process 1: value after adding rank = 11
+Process 2: value after adding rank = 13
+Process 3: value after adding rank = 16
+Process 0: final value received from ring = 16

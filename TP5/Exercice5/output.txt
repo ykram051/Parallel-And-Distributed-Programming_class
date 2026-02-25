@@ -1,0 +1,80 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 1 exo5 1000000000
+=========================================
+Pi Calculation Results
+=========================================
+N (intervals): 1000000000
+Number of processes: 1
+
+Calculated Pi (parallel): 3.141592653589768
+Calculated Pi (serial):   3.141592653589768
+Reference Pi (M_PI):      3.141592653589793
+
+Error (parallel vs M_PI): 2.486900e-14
+Error (serial vs M_PI):   2.486900e-14
+Difference (parallel - serial): 0.000000e+00
+
+Serial time:   1.434485 seconds
+Parallel time: 1.411149 seconds
+Speedup:       1.02
+Efficiency:    101.65%
+=========================================
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 2 exo5 1000000000
+=========================================
+Pi Calculation Results
+=========================================
+N (intervals): 1000000000
+Number of processes: 2
+
+Calculated Pi (parallel): 3.141592653589738
+Calculated Pi (serial):   3.141592653589768
+Reference Pi (M_PI):      3.141592653589793
+
+Error (parallel vs M_PI): 5.506706e-14
+Error (serial vs M_PI):   2.486900e-14
+Difference (parallel - serial): 3.019807e-14
+
+Serial time:   1.399077 seconds
+Parallel time: 0.701051 seconds
+Speedup:       2.00
+Efficiency:    99.78%
+=========================================
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 4 exo5 1000000000
+=========================================
+Pi Calculation Results
+=========================================
+N (intervals): 1000000000
+Number of processes: 4
+
+Calculated Pi (parallel): 3.141592653589855
+Calculated Pi (serial):   3.141592653589768
+Reference Pi (M_PI):      3.141592653589793
+
+Error (parallel vs M_PI): 6.172840e-14
+Error (serial vs M_PI):   2.486900e-14
+Difference (parallel - serial): 8.659740e-14
+
+Serial time:   1.409605 seconds
+Parallel time: 0.345227 seconds
+Speedup:       4.08
+Efficiency:    102.08%
+=========================================
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 8 exo5 1000000000
+=========================================
+Pi Calculation Results
+=========================================
+N (intervals): 1000000000
+Number of processes: 8
+
+Calculated Pi (parallel): 3.141592653589883
+Calculated Pi (serial):   3.141592653589768
+Reference Pi (M_PI):      3.141592653589793
+
+Error (parallel vs M_PI): 9.015011e-14
+Error (serial vs M_PI):   2.486900e-14
+Difference (parallel - serial): 1.150191e-13
+
+Serial time:   3.894493 seconds
+Parallel time: 0.500159 seconds
+Speedup:       7.79
+Efficiency:    97.33%
+=========================================

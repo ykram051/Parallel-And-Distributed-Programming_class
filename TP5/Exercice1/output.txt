@@ -1,0 +1,11 @@
+ikram.benfellah@slurm-login-h23d5-u38-svn1 Lab4]$ mpirun -np 4 exo1
+Hello World from process 0
+I am process 0 out of 4 processes
+[Only Rank 0]: This message is printed only by the master process.
+[Only Rank 0]: Total number of processes: 4
+Hello World from process 2
+I am process 2 out of 4 processes
+Hello World from process 1
+I am process 1 out of 4 processes
+Hello World from process 3
+I am process 3 out of 4 processes

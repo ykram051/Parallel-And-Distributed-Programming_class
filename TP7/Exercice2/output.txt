@@ -1,0 +1,24 @@
+[ikram.benfellah@slurm-login-h23d5-u38-svn1 Exercice2]$ mpirun -np 4 ./exo2.exe 12 10
+Poisson execution with 4 MPI processes
+Domain size: ntx=12 nty=10
+Topology dimensions: 2 along x, 2 along y
+-----------------------------------------
+Rank in the topology: 0   Array indices: x from 1 to 6, y from 1 to 5
+Process 0 has neighbors: N -2 E 1 S 2 W -2
+Rank in the topology: 1   Array indices: x from 1 to 6, y from 6 to 10
+Process 1 has neighbors: N -2 E -2 S 3 W 0
+Rank in the topology: 2   Array indices: x from 7 to 12, y from 1 to 5
+Process 2 has neighbors: N 0 E 3 S -2 W -2
+Rank in the topology: 3   Array indices: x from 7 to 12, y from 6 to 10
+Process 3 has neighbors: N 1 E -2 S -2 W 2
+Iteration 100 global_error = 4.460071e-04
+Iteration 200 global_error = 1.427141e-05
+Converged after 278 iterations (error = 9.737876e-07 < 1.000000e-06)
+Time: 0.0037 s
+
+Exact solution u_exact - Computed solution u
+ 5.86826e-03 -  5.86794e-03
+ 1.05629e-02 -  1.05623e-02
+ 1.40838e-02 -  1.40830e-02
+ 1.64311e-02 -  1.64301e-02
+ 1.76048e-02 -  1.76037e-02
